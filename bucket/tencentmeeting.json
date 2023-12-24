@@ -15,12 +15,6 @@
         "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force -ErrorAction SilentlyContinue",
         "create_startmenu_shortcuts $manifest $dir\\..\\$version $global $arch"
     ],
-    "bin": [
-        [
-            "wemeetapp.exe",
-            "tencent-meeting"
-        ]
-    ],
     "shortcuts": [
         [
             "wemeetapp.exe",
