@@ -32,7 +32,7 @@ jobs:
         shell: powershell
         run: |
           $env:SCOOP_HOME="$(Resolve-Path '.\scoop_core')"
-          .\my_bucket\bin\test.ps1
+          .\bin\test.ps1
   test_pwsh:
     name: PowerShell
     runs-on: windows-latest
@@ -57,4 +57,4 @@ jobs:
         shell: pwsh
         run: |
           $env:SCOOP_HOME="$(Resolve-Path '.\scoop_core')"
-          .\my_bucket\bin\test.ps1
+          .\bin\test.ps1
