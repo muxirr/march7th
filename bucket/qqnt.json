@@ -1,0 +1,52 @@
+{
+    "version": "9.9.6.20139",
+    "description": "An instant messaging tool that gives you the best way to keep in touch with your friends and family, Build with Electron",
+    "homepage": "https://im.qq.com",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://ti.qq.com/agreement/index.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/53af3b2f/QQ9.9.6.20139_x64.exe#/dl.7z",
+            "hash": "ab8664fee2cf290997f181c9055dbbadf6986ca4273cb3c807b9b093a1954011"
+        },
+        "32bit": {
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/b53d1b29/QQ9.9.6.20139_x86.exe#/dl.7z",
+            "hash": "c9aded2213dce5fd7dfcfd905b7a93d46538cf12147d270749a991f60797bd61"
+        }
+    },
+    "installer": {
+        "script": [
+            "$configpath = \"$env:PUBLIC\\Documents\\Tencent\\QQ\"",
+            "if (!(Test-Path \"$configpath\")) {",
+            "    New-Item -Path \"$configpath\" -Type Directory -Force | Out-Null",
+            "}",
+            "Set-Content -NoNewline -Path \"$configpath\\UserDataInfo.ini\" -Value \"[UserDataSet]`nUserDataSavePathType=2`nUserDataSavePath=$persist_dir\\QQ Files\""
+        ]
+    },
+    "shortcuts": [
+        [
+            "Files\\QQ.exe",
+            "QQ"
+        ]
+    ],
+    "persist": "QQ Files",
+    "uninstaller": {
+        "script": "Remove-Item -Path \"$env:PUBLIC\\Documents\\Tencent\" -Recurse -Force | Out-Null"
+    },
+    "checkver": {
+        "url": "https://cdn-go.cn/qq-web/im.qq.com_new/latest/rainbow/windowsDownloadUrl.js",
+        "regex": "QQNT/(?<Commitidx64>[0-9a-f]+)/QQ(?<Version>[\\d.]+)_x64.exe.*QQNT/(?<Commitidx86>[0-9a-f]+)/QQ(?<Version>[\\d.]+)_x86.exe|QQNT/(?<Commitidx86>[0-9a-f]+)/QQ(?<Version>[\\d.]+)_x86.exe.*QQNT/(?<Commitidx64>[0-9a-f]+)/QQ(?<Version>[\\d.]+)_x64.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/$matchCommitidx64/QQ$matchVersion_x64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/$matchCommitidx86/QQ$matchVersion_x86.exe#/dl.7z"
+            }
+        }
+    }
+}
