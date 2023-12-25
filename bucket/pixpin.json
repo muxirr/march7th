@@ -6,7 +6,7 @@
         "identifier": "Proprietary",
         "url": "http://qt.io/licensing/"
     },
-    "url": "https://download.pixpinapp.com/PixPin_1.3.0.0.zip",
+    "url": "https://download.pixpinapp.com/PixPin_1.3.0.0.exe",
     "hash": "90037f8d3e07a8537b15cd8116bad857f7721b6e52dfe3d2c487f43f10b6df32",
     "extract_dir": "PixPin",
     "bin": [
@@ -28,11 +28,10 @@
         ]
     ],
      "checkver": {
-        "url": "https://txc.qq.com/products/614512/change-log",
-        "script": "(iwr -Method POST -Uri $url).Content",
-        "regex": "\\d.(?<Version>\\d.\\d) 版本更新"
+        "url": "https://pixpinapp.com/assets/index.md.f3de7cf0.lean.js",
+        "regex": "PixPin_(?<Version>\\d+.\\d+.\\d+.\\d).exe"
     },
     "autoupdate": {
-        "url": "https://download.pixpinapp.com/PixPin_$matchVersion.0.0.zip"
+        "url": "https://download.pixpinapp.com/PixPin_$matchVersion.zip"
     }
 }
