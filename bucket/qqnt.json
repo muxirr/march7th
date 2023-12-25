@@ -8,11 +8,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/53af3b2f/QQ9.9.6.20201_x64.exe#/dl.7z",
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/a8b6c3ae/QQ9.9.6.20201_x64.exe#/dl.7z",
             "hash": "bad7acf4fa683c9ca3ae33a42ad09805a05c21025b95762ef301e1015f1feef7"
         },
         "32bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/b53d1b29/QQ9.9.6.20201_x86.exe#/dl.7z",
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/0bb95030/QQ9.9.6.20201_x86.exe#/dl.7z",
             "hash": "18e887cdc083e441693ecc93c16cda3cb28c6516e62488679b83aaa71256cac2"
         }
     },
