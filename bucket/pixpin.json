@@ -13,7 +13,7 @@
             "PixPin.exe",
             "pixpin"
         ]
-    }
+    },
     "shortcuts": [
         [
             "PixPin\\PixPin.exe",
@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "url": "https://txc.qq.com/products/614512",
-        "regex": "PixPin_\d.+zip"
+        "regex": "PixPin_\\d.+zip"
     },
     "autoupdate": {
         "url": "https://download.pixpinapp.com/PixPin_$matchVersion.zip"
