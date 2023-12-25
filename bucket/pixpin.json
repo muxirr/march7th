@@ -15,7 +15,14 @@
             "pixpin"
         ]
     ],
-    "persist": ["History","Data"],
+    "persist": [
+        [
+            "History",
+            "Data",
+            "Coredump",
+            "Config"
+        ]    
+    ],
     "shortcuts": [
         [
             "PixPin.exe",
