@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version": "3.21.21.405",
     "description": "Tencent Meeting provides one-stop audio and video conferencing solutions.",
@@ -34,3 +35,42 @@
         "url": "https://updatecdn.meeting.qq.com/cos/$matchCommitid/TencentMeeting_0300000000_$matchVersion.publish.officialwebsite.exe#/dl.7z"
     }
 }
+=======
+{
+    "version": "3.21.21.405",
+    "description": "Tencent Meeting provides one-stop audio and video conferencing solutions.",
+    "homepage": "https://meeting.tencent.com/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://meeting.tencent.com/declare.html"
+    },
+    "notes": "We don't persist your Tencent Meeting data, they are still storaged in \"$env:APPDATA\\Tencent\\WeMeet\".",
+    "url": "https://updatecdn.meeting.qq.com/cos/fccfbd79a34040ef00d314c2afe283b9/TencentMeeting_0300000000_3.21.21.405.publish.officialwebsite.exe#/dl.7z",
+    "hash": "199065ba5ec8911c9b358514313dbce9d818a1ab0b976c7cec9cf45ce0ce6a47",
+    "post_install": [
+        "Rename-Item \"$dir\\`$_10_\" \"$dir\\$version\"",
+        "Remove-Item \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force -ErrorAction SilentlyContinue",
+        "create_startmenu_shortcuts $manifest $dir\\..\\$version $global $arch"
+    ],
+    "bin": [
+        [
+            "wemeetapp.exe",
+            "wemeet"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "wemeetapp.exe",
+            "腾讯会议"
+        ]
+    ],
+    "checkver": {
+        "url": "https://meeting.tencent.com/web-service/query-download-info?q=%5B%7B%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22%7D%5D&nonce=AAAAAAAAAAAAAAAA",
+        "regex": "(?<Commitid>[0-9a-f]+)/TencentMeeting_0300000000_(?<Version>\\d+.\\d+.\\d+.\\d+).publish.officialwebsite.exe"
+    },
+    "autoupdate": {
+        "url": "https://updatecdn.meeting.qq.com/cos/$matchCommitid/TencentMeeting_0300000000_$matchVersion.publish.officialwebsite.exe#/dl.7z"
+    }
+}
+>>>>>>> e6c35a96213685048042f82787a54b7f4a1c039a
