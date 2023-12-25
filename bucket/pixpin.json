@@ -15,6 +15,7 @@
             "pixpin"
         ]
     ],
+    "persist": ["History","Data"],
     "shortcuts": [
         [
             "PixPin.exe",
