@@ -19,8 +19,7 @@
             "History",
             "Data",
             "Coredump",
-            "Config",
-            ".\\LocalStorage.data"    
+            "Config"   
     ],
     "shortcuts": [
         [
