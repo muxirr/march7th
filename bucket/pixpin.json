@@ -26,5 +26,12 @@
             "PixPin.exe",
             "PixPin"
         ]
-    ]
+    ],
+     "checkver": {
+        "url": "https://txc.qq.com/products/614512/change-log",
+        "regex": "\\d.(?<Version>\\d.\\d) 版本更新"
+    },
+    "autoupdate": {
+        "url": "https://download.pixpinapp.com/PixPin_$matchVersion.0.0.zip"
+    }
 }
