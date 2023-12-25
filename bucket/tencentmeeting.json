@@ -28,7 +28,6 @@
     ],
     "checkver": {
         "url": "https://meeting.tencent.com/web-service/query-download-info?q=%5B%7B%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22%7D%5D&nonce=AAAAAAAAAAAAAAAA",
-        "script": "(Invoke-WebRequest -Method 'POST' -Uri $url).Content",
         "regex": "https://(?<url>.*?\\.exe).*?version\".*?\"([\\d.]+)\""
     },
     "autoupdate": {
