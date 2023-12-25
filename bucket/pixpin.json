@@ -20,7 +20,7 @@
             "Data",
             "Coredump",
             "Config",
-            "LocalStorage.data"    
+            ".\\LocalStorage.data"    
     ],
     "shortcuts": [
         [
