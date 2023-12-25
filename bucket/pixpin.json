@@ -8,12 +8,12 @@
     },
     "url": "https://download.pixpinapp.com/PixPin_1.3.0.0.zip",
     "hash": "90037f8d3e07a8537b15cd8116bad857f7721b6e52dfe3d2c487f43f10b6df32",
-    "bin": {
+    "bin": [
         [
             "PixPin.exe",
             "pixpin"
         ]
-    },
+    ],
     "shortcuts": [
         [
             "PixPin\\PixPin.exe",
