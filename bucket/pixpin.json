@@ -29,6 +29,7 @@
     ],
      "checkver": {
         "url": "https://txc.qq.com/products/614512/change-log",
+         "script":"(iwr -Method POST -Uri https://txc.qq.com/products/614512/change-log).Content",
         "regex": "\\d.(?<Version>\\d.\\d) 版本更新"
     },
     "autoupdate": {
