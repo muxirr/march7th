@@ -29,7 +29,7 @@
     ],
     "checkver": {
         "url": "https://txc.qq.com/products/614512",
-        "regex": "PixPin_(?<Version>[\\d.]{7}).zip"
+        "regex": "PixPin_(?<Version>\\d+.\\d+.\\d+.\\d+).zip"
     },
     "autoupdate": {
         "url": "https://download.pixpinapp.com/PixPin_$matchVersion.zip"
