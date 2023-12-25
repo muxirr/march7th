@@ -31,6 +31,6 @@
         "regex": "(?<Commitid>[0-9a-f]+)/TencentMeeting_0300000000_(?<Version>\\d+.\\d+.\\d+.\\d+).publish.officialwebsite.exe"
     },
     "autoupdate": {
-        "url": "https://updatecdn.meeting.qq.com/cos/$matchCommitid/TencentMeeting_0300000000_$matchVersion.publish.officialwebsite.exedl.7z"
+        "url": "https://updatecdn.meeting.qq.com/cos/$matchCommitid/TencentMeeting_0300000000_$matchVersion.publish.officialwebsite.exe#/dl.7z"
     }
 }
