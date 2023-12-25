@@ -31,6 +31,6 @@
         "regex": "https://updatecdn.meeting.qq.com/cos/(([a-z]|[0-9])+)/TencentMeeting_0300000000_$version.publish.officialwebsite.exe"
     },
     "autoupdate": {
-        "url": "https://$matchUrl#/dl.7z"
+        "url": "$matchUrl#/dl.7z"
     }
 }
