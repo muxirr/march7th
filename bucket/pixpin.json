@@ -26,6 +26,6 @@
         "regex": "PixPin_\\d.+zip"
     },
     "autoupdate": {
-        "url": "https://download.pixpinapp.com/PixPin_$version.zip"
+        "url": "https://download.pixpinapp.com/PixPin_$matchVersion.zip"
     }
 }
