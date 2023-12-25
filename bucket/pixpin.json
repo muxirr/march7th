@@ -16,12 +16,11 @@
         ]
     ],
     "persist": [
-        [
             "History",
             "Data",
             "Coredump",
-            "Config"
-        ]    
+            "Config",
+            "LocalStorage.data"    
     ],
     "shortcuts": [
         [
