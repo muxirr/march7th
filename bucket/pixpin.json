@@ -1,13 +1,13 @@
 {
-    "version": "1.3.0.0",
+    "version": "1.3.1.0",
     "description": "功能强大使用简单的截图/贴图工具，帮助你提高效率",
     "homepage": "https://pixpinapp.com/",
     "license": {
         "identifier": "Proprietary",
         "url": "http://qt.io/licensing/"
     },
-    "url": "https://download.pixpinapp.com/PixPin_1.3.0.0.zip",
-    "hash": "90037f8d3e07a8537b15cd8116bad857f7721b6e52dfe3d2c487f43f10b6df32",
+    "url": "https://download.pixpinapp.com/PixPin_1.3.1.0.zip",
+    "hash": "bae6de7833ab6fe992560e82d96ad49cb5ddb71fbf35e723b98dbbf07e6561b0",
     "extract_dir": "PixPin",
     "bin": [
         [
