@@ -14,7 +14,7 @@
     ],
     "persist": [
         "logs",
-        "libraries".
+        "libraries",
         "config.yaml"
     ],
     "checkver": {
