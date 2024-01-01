@@ -1,1 +1,26 @@
-
+{
+    "version": "1.7.2",
+    "description": "March7thAssistant is a toolbox with lots of Star Rail",
+    "homepage": "https://moesnow.github.io/March7thAssistant/",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/moesnow/March7thAssistant/releases/download/v1.7.2/March7thAssistant_v1.7.2_full.zip",
+    "hash": "2e87f6f7f54d106472567c539dd09d46a60f24e2",
+    "extract_dir": "March7thAssistant_v$version"
+    "shortcuts": [
+        [
+            "March7th Launcher.exe",
+            "march7thlauncher"
+        ]
+    ],
+    "persist": [
+        "logs",
+        "libraries".
+        "config.yaml"
+    ],
+    "checkver": {
+        "github": "https://github.com/moesnow/March7thAssistant"
+    },
+    "autoupdate": {
+        "url": "https://github.com/moesnow/March7thAssistant/releases/download/v$version/March7thAssistant_v$version_full.zip"
+    }
+}
