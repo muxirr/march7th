@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "url": "https://github.com/moesnow/March7thAssistant/releases/download/v1.7.2/March7thAssistant_v1.7.2_full.zip",
     "hash": "2e87f6f7f54d106472567c539dd09d46a60f24e2",
-    "extract_dir": "March7thAssistant_v$version"
+    "extract_dir": "March7thAssistant_v$version",
     "shortcuts": [
         [
             "March7th Launcher.exe",
