@@ -28,7 +28,7 @@
         ]
     ],
      "checkver": {
-        "url": "https://pixpinapp.com/assets/index.md.f3de7cf0.lean.js",
+        "url": "https://pixpinapp.com/assets/index.md.b6da0c35.lean.js",
         "regex": "PixPin_(?<Version>\\d+.\\d+.\\d+.\\d).exe"
     },
     "autoupdate": {
