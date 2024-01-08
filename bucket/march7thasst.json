@@ -6,7 +6,7 @@
     "url": "https://github.com/moesnow/March7thAssistant/releases/download/v1.7.4/March7thAssistant_v1.7.4_full.zip",
     "hash": "4135e111f9caaf1f30cd100f52d0ef4fc044b65a6c8be476eb1441e212385752",
      "post_install": [
-        "Move-Item .\\$dir\\March7thAssistant_v$version_full\\* .\\$dir\\$version\\"
+        "Move-Item $dir\\March7thAssistant_v$version_full\\* $dir\\$version\\"
     ],
     "shortcuts": [
         [
