@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/a8b6c3ae/QQ9.9.6.20201_x64.exe#/dl.7z",
-            "hash": "bad7acf4fa683c9ca3ae33a42ad09805a05c21025b95762ef301e1015f1feef7"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/997cff6d/QQ9.9.7.20667_x64.exe#/dl.7z",
+            "hash": "5369845198dd24d1709a0d83649f08af7f72042f1583bf4f639a42a982032a5d"
         },
         "32bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/0bb95030/QQ9.9.6.20201_x86.exe#/dl.7z",
-            "hash": "18e887cdc083e441693ecc93c16cda3cb28c6516e62488679b83aaa71256cac2"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/fb389f7b/QQ9.9.7.20667_x86.exe#/dl.7z",
+            "hash": "124c815f9348d8f95a34fa4f2e9efe807f69cd1bddef9a9c3c32f52d424eb27a"
         }
     },
     "installer": {
