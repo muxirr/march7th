@@ -61,12 +61,7 @@ they satisfy the criteria before opening new app request in my bucket.
 
 Be a contributor! Fork it, update the outdated apps app manifest, and file pull-request. :D
 
-**4. What does the bucket name "dorado" mean?**
+**4. What does the bucket name "March7th" mean?**
 
-[Dorado (Mahi-Mahi)]
+A Character of Honkia:Star Rail
 
-[MinGW Distro]: https://nuwen.net/mingw.html
-[nvm-windows]: https://github.com/chawyehsu/nvm-windows
-[winlibs]: https://winlibs.com/
-[issue]: https://github.com/chawyehsu/dorado/issues
-[Dorado (Mahi-Mahi)]: https://en.wikipedia.org/wiki/Mahi-mahi
