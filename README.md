@@ -21,20 +21,14 @@
 
 ## 推荐软件
 
-| 软件                    | 简介                                                                                          |
-| ----------------------- | --------------------------------------------------------------------------------------------- |
-| hmcl                    | 好用的国产 Minecraft 启动器                                                                   |
-| llvm-mingw              | 一个基于 LLVM/Clang/LLD 的 **mingw-w64** 工具链                                               |
-| msys2-cn                | MSYS2 衍生，配置大陆镜像点自动无人值守安装                                                    |
-| neteasemusic            | 网易云音乐客户端                                                                              |
-| nuwen-mingw-gcc         | GCC 编译器极简包，源自 STL 的 [MinGW Distro]，只有 gcc 与 ld，最小化环境编译简单的 C/C++ 代码 |
-| nvm-windows             | [nvm-windows] 修改版，移除了管理员提权要求，使得非权限普通用户亦可使用                        |
-| texlive                 | 需要 Tex 环境？TexLive 大概是当下最佳解决方法                                                 |
-| trash                   | 将待删除文件移至回收站，而不是直接 `rm -rf`，类似于 macOS 的 trash                            |
-| volta                   | 你可能不再需要 nvm-windows                                                                    |
-| winlibs-mingw-msvcrt    | [winlibs](http://winlibs.com/) 编译的完整 MSVCRT 运行库 **mingw-w64** 工具链发行版            |
-| winlibs-mingw-ucrt      | [winlibs](http://winlibs.com/) 编译的完整 UCRT 运行库 **mingw-w64** 工具链发行版              |
-| winlibs-mingw-llvm-ucrt | 包含 LLVM 支持的 _winlibs-mingw-ucrt_                                                         |
+| 软件                    | 简介                                                                                                     |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| pxipin                  | 功能强大使用简单的截图/贴图工具，帮助你提高效率                                                              |
+| qqnt                    | 基于NT内核的新版QQ                                                                                        |
+| steampp                 | 真•Steam管家                                                                                             |
+| wemeet                  | 腾讯会议客户端                                                                                            |
+| bettergi                | BetterGI · 更好的原神 - 自动拾取 | 自动剧情 | 全自动钓鱼(AI) | 全自动七圣召唤 | 自动伐木 | 快速传送 | 自动秘境 |
+| march7thasst            | March7thAssistant · 三月七小助手                                                                          |
 
 更多待你发现~
 
