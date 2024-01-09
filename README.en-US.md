@@ -21,18 +21,15 @@
 
 ## Featured Apps
 
-| Manifest                | Description                                                                                                                                            |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| llvm-mingw              | LLVM/Clang/LLD based **mingw-w64** toolchain.                                                                                                          |
-| miniconda3              | Miniconda3 variant which dose not add the default venv into your PATH unless you activate it with `conda activate base`                                |
-| nuwen-mingw-gcc         | **Minimalist** GCC compiler from STL's [MinGW Distro]. It's **NOT** a full toolchain. No make, gdb, just the _gcc_ and _ld_ for quick-start scenarios. |
-| nvm-windows             | A [nvm-windows] fork that removes elevated permission, for non-admin Scoop users                                                                       |
-| trash                   | Safely move files and folders to recycle bin instead of using `rm -rf`                                                                                 |
-| rustup-np               | `non-portable` variant of Rustup that keeps `.rustup` and `.cargo` in their original location: `$env:USERPROFILE`                                      |
-| volta                   | You don't need nvm-windows anymore                                                                                                                     |
-| winlibs-mingw-msvcrt    | A full **mingw-w64** toolchain with MSVCRT runtime built and distributed by [winlibs].                                                                 |
-| winlibs-mingw-ucrt      | A full **mingw-w64** toolchain with UCRT runtime built and distributed by [winlibs].                                                                   |
-| winlibs-mingw-llvm-ucrt | _winlibs-mingw-ucrt_ with LLVM support                                                                                                                 |
+| Manifest                | Description                                                                                               |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| pxipin                  | Powerful, easy-to-use screenshot/sticker tool to help you be more productive                                                              |
+| qqnt                    | A new version of QQ based on the NT kernel                                                                                        |
+| steampp                 | Steam++ is a toolbox with lots of Steam tools                                                                                          |
+| wemeet                  | Tencent Meeting client                                                                                            |
+| bettergi                | Better Genshin Impact - Auto Pick | Auto Plot | Fully Automated Fishing (AI) | Fully automatic summoning of the Seven Saints | Automatic logging | Fast Delivery | Automatic Uncharted |
+| march7thasst            | March7thAssistant                                                               |
+
 
 ## Question
 
