@@ -5,9 +5,11 @@ Extra manifests for [Scoop](https://scoop.sh), the Windows command-line installe
 How do I install these manifests?
 ---------------------------------
 
-To add this bucket, run ``scoop bucket add march7th https://github.com/WuwuZiQWQ/March7th.git``. To install, do ``scoop install march7th/<manifest>``.
-
-How do I contribute new manifests?
-----------------------------------
-
-To make a new manifest contribution, please read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md).
+To add this bucket, run 
+```powershell
+scoop bucket add march7th https://github.com/WuwuZiQWQ/March7th.git
+```
+To install, do 
+```powershell
+scoop install march7th/<manifest>
+```
