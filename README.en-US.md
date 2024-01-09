@@ -21,14 +21,14 @@
 
 ## Featured Apps
 
-| Manifest                | Description                                                                                               |
-| ----------------------- | -------------------------------------------------------------------------------------------------------- |
-| pxipin                  | Powerful, easy-to-use screenshot/sticker tool to help you be more productive                                                              |
-| qqnt                    | A new version of QQ based on the NT kernel                                                                                        |
-| steampp                 | Steam++ is a toolbox with lots of Steam tools                                                                                          |
-| wemeet                  | Tencent Meeting client                                                                                            |
-| bettergi                | Better Genshin Impact - Auto Pick | Auto Plot | Fully Automated Fishing (AI) | Fully automatic summoning of the Seven Saints | Automatic logging | Fast Delivery | Automatic Uncharted |
-| march7thasst            | March7thAssistant                                                               |
+| Manifest                | Description                                                                                                                                                                |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| pxipin                  | Powerful, easy-to-use screenshot/sticker tool to help you be more productive                                                                                               |
+| qqnt                    | A new version of QQ based on the NT kernel                                                                                                                                 |
+| steampp                 | Steam++ is a toolbox with lots of Steam tools                                                                                                                              |
+| wemeet                  | Tencent Meeting client                                                                                                                                                     |
+| bettergi                | Better Genshin Impact - Auto Pick,Auto Plot,Fully Automated Fishing (AI),Fully automatic summoning of the Seven Saints,Automatic logging,Fast Delivery,Automatic Uncharted |
+| march7thasst            | March7thAssistant                                                                                                                                                          |
 
 
 ## Question
