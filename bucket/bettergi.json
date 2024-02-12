@@ -14,7 +14,6 @@
     ],
    "checkver": {
         "github": "https://github.com/babalae/better-genshin-impact"
-        "regex": "BetterGI_v(?<Version>\\d+.\\d+.\\d).7z"
     },
     "autoupdate": {
         "url": "https://github.com/babalae/better-genshin-impact/releases/download/$version/BetterGI_v$matchVersion.7z"
