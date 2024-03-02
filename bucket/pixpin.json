@@ -9,7 +9,7 @@
     "url": "https://download.pixpinapp.com/PixPin_1.7.5.0.zip",
     "hash": "c699a9fcda94016bfc4dab6b317eb0afaf4212e091fdb16d5bfbba69fa143961",
     "extract_dir": "PixPin",
-    "post_install": [
+    "pre_install": [
         "if(-not (Test-Path -Path \"$dir\\History\")){mkdir \"$dir\\History\"}",
         "if(-not (Test-Path -Path \"$dir\\Data\")){mkdir \"$dir\\Data\"}",
         "if(-not (Test-Path -Path \"$dir\\Coredump\")){mkdir \"$dir\\Coredump\"}",
