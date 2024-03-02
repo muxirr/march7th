@@ -7,7 +7,7 @@
         "url": "http://qt.io/licensing/"
     },
     "url": "https://download.pixpinapp.com/PixPin_1.7.6.0.zip",
-    "hash": "c699a9fcda94016bfc4dab6b317eb0afaf4212e091fdb16d5bfbba69fa143961",
+    "hash": "1e5962682c55616e6dd955ee015f315ffc77f94c3921ad3511fd487b154236bf",
     "extract_dir": "PixPin",
     "pre_install": [
         "if(-not (Test-Path -Path \"$dir\\History\")){mkdir \"$dir\\History\"}",
