@@ -10,10 +10,10 @@
     "hash": "c699a9fcda94016bfc4dab6b317eb0afaf4212e091fdb16d5bfbba69fa143961",
     "extract_dir": "PixPin",
     "post_install": [
-        "if(-not (Test-Path -Path \"$dir\\History)){mkdir \"$dir\\History}",
-        "if(-not (Test-Path -Path \"$dir\\Data)){mkdir \"$dir\\Data}",
-        "if(-not (Test-Path -Path \"$dir\\Coredump)){mkdir \"$dir\\Coredump}",
-        "if(-not (Test-Path -Path \"$dir\\Config)){mkdir \"$dir\\Config}",
+        "if(-not (Test-Path -Path \"$dir\\History\")){mkdir \"$dir\\History\"}",
+        "if(-not (Test-Path -Path \"$dir\\Data\")){mkdir \"$dir\\Data\"}",
+        "if(-not (Test-Path -Path \"$dir\\Coredump\")){mkdir \"$dir\\Coredump\"}",
+        "if(-not (Test-Path -Path \"$dir\\Config\")){mkdir \"$dir\\Config\"}",
     ],
     "bin": [
         [
