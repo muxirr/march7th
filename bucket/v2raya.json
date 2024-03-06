@@ -27,7 +27,7 @@
         "}",
         "$exepath = \"powershell -NoLogo -NoProfile -File $dir\\start-v2raya.ps1\".Replace('\\', '\\\\')",
         "@('add-startup', 'remove-startup') | ForEach-Object {",
-        "    $content = Get-Content \"$bucketsdir\\v2raya\\scripts\\v2raya\\$_.reg\"",
+        "    $content = Get-Content \"$bucketsdir\\march7th\\scripts\\v2raya\\$_.reg\"",
         "    $content = $content.Replace('$exepath', $exepath)",
         "    if ($global) {",
         "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
