@@ -23,7 +23,7 @@
     },
     "pre_install": [
         "@('start-v2raya', 'stop-v2raya', 'reset-passwd-v2raya') | ForEach-Object {",
-        "    Copy-Item \"$bucketsdir\\v2raya\\scripts\\v2raya\\$_.ps1\" \"$dir\\$_.ps1\"",
+        "    Copy-Item \"$bucketsdir\\march7th\\scripts\\v2raya\\$_.ps1\" \"$dir\\$_.ps1\"",
         "}",
         "$exepath = \"powershell -NoLogo -NoProfile -File $dir\\start-v2raya.ps1\".Replace('\\', '\\\\')",
         "@('add-startup', 'remove-startup') | ForEach-Object {",
