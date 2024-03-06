@@ -8,7 +8,7 @@
     },
     "depends": "v2ray",
     "suggest": {
-        "v2ray-rules-dat": "v2raya/v2ray-rules-dat"
+        "v2ray-rules-dat": "march7th/v2ray-rules-dat"
     },
     "notes": "Start v2rayA with Windows by running: 'reg import \"$(scoop prefix v2raya)\\add-startup.reg\"'.",
     "architecture": {
