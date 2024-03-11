@@ -34,7 +34,8 @@
         "    }",
         "    $content | Set-Content -Path \"$dir\\$_.reg\" -Encoding Ascii",
         "}",
-        "New-Item -Path \"$dir\"\\v2raya.log"
+        "mkdir \"$dir\\log\" -Force | out-null",
+        "New-Item -Path \"$dir\\log\" -Name \"v2raya.log\" -ItemType \"file\" -Force | out-null"
     ],
     "pre_uninstall": "stop-v2raya",
     "uninstaller": {
@@ -59,7 +60,7 @@
     },
     "persist": [
         "config",
-        "v2raya.log"
+        "log"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/v2rayA/v2raya/releases/latest",
