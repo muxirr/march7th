@@ -34,7 +34,7 @@
         "    }",
         "    $content | Set-Content -Path \"$dir\\$_.reg\" -Encoding Ascii",
         "}",
-        "New-Item -Path \"$dir\" v2raya.log"
+        "New-Item -Path \"$dir\"\\v2raya.log"
     ],
     "pre_uninstall": "stop-v2raya",
     "uninstaller": {
