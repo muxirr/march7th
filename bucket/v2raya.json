@@ -33,7 +33,8 @@
         "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
         "    }",
         "    $content | Set-Content -Path \"$dir\\$_.reg\" -Encoding Ascii",
-        "}"
+        "}",
+        "New-Item -Path \"$dir\" v2raya.log"
     ],
     "pre_uninstall": "stop-v2raya",
     "uninstaller": {
@@ -56,7 +57,10 @@
     "env_set": {
         "V2RAYA_V2RAY_BIN": "$(scoop prefix v2ray)\\v2ray.exe"
     },
-    "persist": "config",
+    "persist": [
+        "config",
+        "v2raya.log"
+    ],
     "checkver": {
         "url": "https://api.github.com/repos/v2rayA/v2raya/releases/latest",
         "regex": "v2raya_windows_x64_([\\d.]+).exe"
