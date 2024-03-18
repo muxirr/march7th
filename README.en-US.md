@@ -27,7 +27,9 @@
 | steampp                 | Steam++ is a toolbox with lots of Steam tools                                                                                                                              |
 | wemeet                  | Tencent Meeting client                                                                                                                                                     |
 | bettergi                | Better Genshin Impact - Auto Pick,Auto Plot,Fully Automated Fishing (AI),Fully automatic summoning of the Seven Saints,Automatic logging,Fast Delivery,Automatic Uncharted |
-| march7thasst            | March7thAssistant                                                                                                                                                          |
+| march7thasst            | March7thAssistant  |
+| v2raya            | v2rayA is a V2Ray client supporting global transparent proxy on Linux and system proxy on Windows and macOS, it is compatible with SS, SSR, Trojan(trojan-go), Tuic and Juicity protocols. |
+| go-musicfox             |go-musicfox is another NetEase Cloud Music command-line client written in Go, which supports various sound quality levels, UnblockNeteaseMusic, Last.fm, MPRIS and macOS interactive response (sleep pause, Bluetooth headset disconnection response and menu bar control, etc.) and other functional features.|
 
 
 ## Question
