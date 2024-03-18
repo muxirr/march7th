@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 align="center">🐟 dorado</h1>
+    <h1 align="center">March7th</h1>
     <p align="center">
         <a href="https://github.com/WuwuZiQWQ/March7th/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/WuwuZiQWQ/March7th/ci.yml?style=flat-square&logo=github&label=Tests" alt="GitHub Actions CI Status"></a>
         <a href="https://github.com/WuwuZiQWQ/March7th/blob/master/LICENSE"><img src="https://img.shields.io/github/license/WuwuZiQWQ/March7th.svg?style=flat-square" alt="License"></a>
