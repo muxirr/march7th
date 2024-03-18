@@ -39,7 +39,7 @@
 Run below command in PowerShell to add the bucket:
 
 ```powershell
-scoop bucket add march7th https://github.com/WuwuZiQWQ/March7th
+scoop bucket add march7th https://github.com/wuwuziqwq/March7th
 ```
 
 Install apps from this bucket with below command:
