@@ -28,6 +28,9 @@
 | wemeet                  | 腾讯会议客户端                                                                                    |
 | bettergi                | BetterGI · 更好的原神 - 自动拾取，自动剧情，全自动钓鱼(AI)，全自动七圣召唤，自动伐木，快速传送，自动秘境 |
 | march7thasst            | March7thAssistant · 三月七小助手                                                                  |
+| v2raya            | v2rayA 是一个支持全局透明代理的 V2Ray 客户端，同时兼容 SS、SSR、Trojan(trojan-go)、Tuic 与 Juicity协议。 |
+| go-musicfox             |go-musicfox 是用 Go 写的又一款网易云音乐命令行客户端，支持各种音质级别、UnblockNeteaseMusic、Last.fm、MPRIS 和 macOS 交互响应（睡眠暂停、蓝牙耳机连接断开响应和菜单栏控制等）等功能特性。|
+
 
 更多待你发现~
 
