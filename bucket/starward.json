@@ -10,6 +10,7 @@
         "New-Item -Path \"$dir\" -Name \"StarwardDatabase.db\" -ItemType \"file\" -Force | out-null"
     ],
     "extract_dir": "Starward",
+    "bin": "Starward.exe",
     "shortcuts": [
         [
             "Starward.exe",
@@ -19,6 +20,7 @@
     "persist": [
         "config.ini",
         "StarwardDatabase.db",
+        "DatabaseBackup",
         "bg"
     ],
     "checkver": {

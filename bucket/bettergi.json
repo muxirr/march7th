@@ -6,13 +6,14 @@
     "url": "https://github.com/babalae/better-genshin-impact/releases/download/0.25.0/BetterGI_v0.25.0.7z",
     "hash": "87ef06985a32ac09338454b811ebd24431e480a3767e623429df5222eaf46d5b",
     "extract_dir": "BetterGI",
+    "bin": "BetterGI.exe",
     "shortcuts": [
         [
             "BetterGI.exe",
             "更好的原神"
         ]
     ],
-   "checkver": {
+    "checkver": {
         "github": "https://github.com/babalae/better-genshin-impact"
     },
     "autoupdate": {
