@@ -4,7 +4,7 @@
     "homepage": "https://bgi.huiyadan.com/",
     "license": "GPL-3.0-only",
     "url": "https://github.com/babalae/better-genshin-impact/releases/download/0.27.0/BetterGI_v0.27.1.7z",
-    "hash": "87ef06985a32ac09338454b811ebd24431e480a3767e623429df5222eaf46d5b",
+    "hash": "61a73f08b90c71001a6fb9ce340acae06c17c814a0edaccdd27138adcaa2f821",
     "extract_dir": "BetterGI",
     "bin": "BetterGI.exe",
     "shortcuts": [
