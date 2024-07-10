@@ -1,10 +1,10 @@
 {
-    "version": "3.0.0-rc.7",
+    "version": "3.0.0-rc.9",
     "description": "Steam++ is a toolbox with lots of Steam tools",
     "homepage": "https://steampp.net/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/BeyondDimension/SteamTools/releases/download/3.0.0-rc.7/Steam++_v3.0.0-rc.7_win_x64.7z",
-    "hash": "5D3B84FF90624B4486C6454E2A9653A9E745506763AEC54709FD0EF71BE08424",
+    "url": "https://github.com/BeyondDimension/SteamTools/releases/download/3.0.0-rc.9/Steam++_v3.0.0-rc.9_win_x64.7z",
+    "hash": "402A76E2F8BD0C6FC2592DB05062B3DE35635F2AB02EF0ACEB53E177B4E810FE",
     "shortcuts": [
         [
             "Steam++.exe",
