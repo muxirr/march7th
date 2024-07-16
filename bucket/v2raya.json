@@ -8,6 +8,7 @@
     },
     "depends": "v2ray",
     "suggest": {
+        "v2ray": "main/v2ray",
         "v2ray-rules-dat": "march7th/v2ray-rules-dat"
     },
     "notes": "Start v2rayA with Windows by running: 'reg import \"$(scoop prefix v2raya)\\add-startup.reg\"'.",
@@ -35,16 +36,19 @@
         "    $content | Set-Content -Path \"$dir\\$_.reg\" -Encoding Ascii",
         "}",
         "mkdir \"$dir\\log\" -Force | out-null",
-        "New-Item -Path \"$dir\\log\" -Name \"v2raya.log\" -ItemType \"file\" -Force | out-null"
+        "New-Item -Path \"$dir\\log\" -Name \"v2raya.log\" -ItemType \"file\" -Force | out-null",
+        "if ([String]::IsNullOrEmpty($(scoop prefix v2ray))) {",
+        "   Write-Host \"Please install v2ray first.\"",
+        "   $v2ray = $env:SCOOP+\"app\\v2ray\\current\"",
+        "Set-EnvVar -Name V2RAYA_V2RAY_BIN -Value \"$(scoop prefix v2ray)\\v2ray.exe\"",
+        "}",
+        "else {",
+        "   Set-EnvVar -Name V2RAYA_V2RAY_BIN -Value \"$(scoop prefix v2ray)\\v2ray.exe\"",
+        "}"
     ],
     "pre_uninstall": "stop-v2raya",
     "uninstaller": {
         "script": "if ($cmd -eq 'uninstall') { reg import \"$dir\\remove-startup.reg\" }"
-    },
-    "env_set": {
-        "V2RAYA_V2RAY_BIN": "$(scooop prefix v2ray)\\v2ray.exe",
-        "V2RAYA_V2RAY_ASSETSDIR": "$(scooop prefix v2ray)",
-        "V2RAY_LOCATION_ASSET": "$(scooop prefix v2ray)"
     },
     "bin": [
         [
