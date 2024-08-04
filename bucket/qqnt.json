@@ -1,5 +1,5 @@
 {
-    "version": "9.9.12_240708",
+    "version": "9.9.12_240729",
     "description": "An instant messaging tool that gives you the best way to keep in touch with your friends and family, Build with Electron",
     "homepage": "https://im.qq.com",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.12_240708_x64_01.exe#/dl.7z",
-            "hash": "75e666fa154939bd459d5e2bf2548504a791f3d7a58765ff9ee73e881bd0da10"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.12_240729_x64_01.exe#/dl.7z",
+            "hash": "5b0168af050c2abbd7c5437502c31afed621421816bcf6785892c9321f7fd26f"
         },
         "32bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.12_240708_x86_01.exe#/dl.7z",
-            "hash": "4d82d77be5049296c44950c67f07e1c42b63c8982c2e53346ca8214a58f39d97"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.12_240729_x86_01.exe#/dl.7z",
+            "hash": "15a4708ea74a262120348d028db60807d3788c0cdd89a681538cb984eb400cdd"
         }
     },
     "installer": {
