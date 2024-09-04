@@ -16,10 +16,10 @@
         "script": "Invoke-ExternalCommand \"$dir/uninstall.exe\" -ArgumentList '/S' -RunAs | Out-Null"
     },
     "checkver": {
-        "github": "https://github.com/rime/weasel",
-        "regex": "weasel-(?Version[\\d.]+)-installer"
+        "url": "https://api.github.com/repos/rime/weasel/releases/latest",
+        "regex": "rime/weasel/releases/download/(?mainVersion)[\\d.]+/weasel-(?Version)[\\d.]+-installer.exe"
     },
     "autoupdate": {
-        "url": "https://github.com/rime/weasel/releases/download/$version/weasel-$matchVersion-installer.exe#/dl.7z"
+        "url": "https://github.com/rime/weasel/releases/download/$mainVersion/weasel-$Version-installer.exe#/dl.7z"
     }
 }
