@@ -13,12 +13,13 @@
     ],
     "persist": "AppData",
     "checkver": {
-        "github": "https://github.com/SteamTools-Team/SteamTools"
+        "url": "https://api.github.com/repos/SteamTools-Team/SteamTools/releases/latest",
+        "regex": "Steam++_v([\\S]+)_win_x64.7z"
     },
     "autoupdate": {
         "url": "https://github.com/SteamTools-Team/SteamTools/releases/download/$version/Steam++_v$version_win_x64.7z",
         "hash": {
-            "url": "https://api.github.com/repos/SteamTools-Team/SteamTools/releases",
+            "url": "https://api.github.com/repos/SteamTools-Team/SteamTools/releases/latest",
             "regex": "v$version_win_x64.7z.{14}(?<sha256>[\\w]+)"
         }
     }
