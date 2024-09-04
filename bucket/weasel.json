@@ -16,9 +16,9 @@
         "script": "Invoke-ExternalCommand \"$dir/uninstall.exe\" -ArgumentList '/S' -RunAs | Out-Null"
     },
     "checkver": {
-        "url": "https://github.com/rime/weasel/releases",
+        "github": "https://github.com/rime/weasel/releases",
     },
     "autoupdate": {
-        "url": "https://github.com/rime/weasel/releases/download/$matchVersion/weasel-$matchVersion-installer.exe#/dl.7z"
+        "url": "https://github.com/rime/weasel/releases/download/$version/weasel-$version-installer.exe#/dl.7z"
     }
 }
