@@ -17,7 +17,7 @@
     },
     "checkver": {
         "url": "https://api.github.com/repos/rime/weasel/releases/latest",
-        "regex": "rime/weasel/releases/download/(?mainVersion)[\\d.]+/weasel-(?Version)[\\d.]+-installer.exe"
+        "regex": "rime/weasel/releases/download/((?<mainVersion>)[\\d.]+)/weasel-((?<Version>)[\\d.]+)-installer.exe"
     },
     "autoupdate": {
         "url": "https://github.com/rime/weasel/releases/download/$mainVersion/weasel-$Version-installer.exe#/dl.7z"
