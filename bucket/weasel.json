@@ -6,15 +6,17 @@
     "hash": "bb5742f8e363690cc947ef310165a54ca43b8e3c8bf66c54d12bfb9bde5c45cd",
     "installer": {
         "script": [
+            "if(!(Test-Path \"$dir\\Rime\")) {New-Item \"$dir\\Rime\" -ItemType Directory | Out-Null} ",
             "& \"$dir\\WeaselSetup.exe\" /i",
             "& \"$dir\\WeaselDeployer.exe\" /install",
             "& \"$dir\\WeaselServer.exe\""
         ]
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
-    "uninstaller": {
-        "script": "Invoke-ExternalCommand \"$dir/uninstall.exe\" -ArgumentList '/S' -RunAs | Out-Null"
-    },
+    "persist": [
+        "Rime"
+    ],
+    "pre_uninstall": "Start-Process -FilePath \"$dir/weaselserver.exe\" -ArgumentList \"/q\" | Out-Null",
     "checkver": {
         "url": "https://api.github.com/repos/rime/weasel/releases/latest",
         "regex": "rime/weasel/releases/download/(?<Version>[\\d.]+)/weasel-(?<Real>[\\d.]+)-installer.exe"
