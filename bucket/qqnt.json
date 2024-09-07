@@ -22,7 +22,7 @@
             "if (!(Test-Path \"$configpath\")) {",
             "    New-Item -Path \"$configpath\" -Type Directory -Force | Out-Null",
             "}",
-            "Set-Content -NoNewline -Path \"$configpath\\UserDataInfo.ini\" -Value \"[UserDataSet]`nUserDataSavePathType=2`nUserDataSavePath=$persist_dir\\Tencnet Files\""
+            "Set-Content -NoNewline -Path \"$configpath\\UserDataInfo.ini\" -Value \"[UserDataSet]`nUserDataSavePathType=2`nUserDataSavePath=$persist_dir\\Tencent Files\""
         ]
     },
     "shortcuts": [
