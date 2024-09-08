@@ -1,8 +1,8 @@
 <div align="center">
     <h1 align="center">March7th</h1>
     <p align="center">
-        <a href="https://github.com/WuwuZiQWQ/March7th/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/WuwuZiQWQ/March7th/ci.yml?style=flat-square&logo=github&label=Tests" alt="GitHub Actions CI Status"></a>
-        <a href="https://github.com/WuwuZiQWQ/March7th/blob/master/LICENSE"><img src="https://img.shields.io/github/license/WuwuZiQWQ/March7th.svg?style=flat-square" alt="License"></a>
+        <a href="https://github.com/muxirr/march7th/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/muxirr/march7th/ci.yml?style=flat-square&logo=github&label=Tests" alt="GitHub Actions CI Status"></a>
+        <a href="https://github.com/muxirr/march7th/blob/master/LICENSE"><img src="https://img.shields.io/github/license/WuwuZiQWQ/March7th.svg?style=flat-square" alt="License"></a>
         <a href="https://www.microsoft.com/en-us/windows"><img src="https://img.shields.io/badge/Target-Windows%2010-0067B8.svg?style=flat-square" alt="Powered by Saber" /></a>
         <a href="https://github.com/WuwuZiQWQ/March7th"><img src="https://img.shields.io/github/repo-size/WuwuZiQWQ/March7th.svg?style=flat-square" alt="Repo size"></a>
     </p>
@@ -28,6 +28,7 @@
 | wemeet                  | 腾讯会议客户端                                                                                    |
 | v2raya            | v2rayA 是一个支持全局透明代理的 V2Ray 客户端，同时兼容 SS、SSR、Trojan(trojan-go)、Tuic 与 Juicity协议。 |
 | go-musicfox             |go-musicfox 是用 Go 写的又一款网易云音乐命令行客户端，支持各种音质级别、UnblockNeteaseMusic、Last.fm、MPRIS 和 macOS 交互响应（睡眠暂停、蓝牙耳机连接断开响应和菜单栏控制等）等功能特性。|
+| weasel             |小狼毫输入法|
 
 
 更多待你发现~
@@ -56,7 +57,7 @@ scoop install march7th/<软件名>
 
 欢迎 Fork 本仓库，修改落后的软件清单，并提交你的拉取请求。:D
 
-**4. 仓库名 March7th 是什么意思？**
+**4. 仓库名 march7th 是什么意思？**
 
 三月七：崩坏：星穹铁道的角色。
 
