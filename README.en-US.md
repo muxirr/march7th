@@ -1,8 +1,8 @@
 <div align="center">
     <h1 align="center">March7th</h1>
     <p align="center">
-        <a href="https://github.com/WuwuZiQWQ/March7th/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/WuwuZiQWQ/March7th/ci.yml?style=flat-square&logo=github&label=Tests" alt="GitHub Actions CI Status"></a>
-        <a href="https://github.com/WuwuZiQWQ/March7th/blob/master/LICENSE"><img src="https://img.shields.io/github/license/WuwuZiQWQ/March7th.svg?style=flat-square" alt="License"></a>
+        <a href="https://github.com/muxirr/march7th/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/muxirr/march7th/ci.yml?style=flat-square&logo=github&label=Tests" alt="GitHub Actions CI Status"></a>
+        <a href="https://github.com/muxirr/march7th/blob/master/LICENSE"><img src="https://img.shields.io/github/license/WuwuZiQWQ/March7th.svg?style=flat-square" alt="License"></a>
         <a href="https://www.microsoft.com/en-us/windows"><img src="https://img.shields.io/badge/Target-Windows%2010-0067B8.svg?style=flat-square" alt="Powered by Saber" /></a>
         <a href="https://github.com/WuwuZiQWQ/March7th"><img src="https://img.shields.io/github/repo-size/WuwuZiQWQ/March7th.svg?style=flat-square" alt="Repo size"></a>
     </p>
@@ -28,6 +28,7 @@
 | wemeet                  | Tencent Meeting client                                                                                                                                                     |
 | v2raya            | v2rayA is a V2Ray client supporting global transparent proxy on Linux and system proxy on Windows and macOS, it is compatible with SS, SSR, Trojan(trojan-go), Tuic and Juicity protocols. |
 | go-musicfox             |go-musicfox is another NetEase Cloud Music command-line client written in Go, which supports various sound quality levels, UnblockNeteaseMusic, Last.fm, MPRIS and macOS interactive response (sleep pause, Bluetooth headset disconnection response and menu bar control, etc.) and other functional features.|
+|weasel|Rime for Windows|
 
 
 ## Question
@@ -37,7 +38,7 @@
 Run below command in PowerShell to add the bucket:
 
 ```powershell
-scoop bucket add march7th https://github.com/wuwuziqwq/March7th
+scoop bucket add march7th https://github.com/muxirr/march7th
 ```
 
 Install apps from this bucket with below command:
@@ -57,7 +58,7 @@ they satisfy the criteria before opening new app request in my bucket.
 
 Be a contributor! Fork it, update the outdated apps app manifest, and file pull-request. :D
 
-**4. What does the bucket name "March7th" mean?**
+**4. What does the bucket name "march7th" mean?**
 
 A Character of Honkia:Star Rail
 
