@@ -39,7 +39,7 @@
 确保你已经有 Scoop 环境，执行以下命令订阅本软件仓库：
 
 ```powershell
-scoop bucket add march7th https://github.com/wuwuziqwq/March7th
+scoop bucket add march7th https://github.com/muxirr/march7th
 ```
 
 执行以下命令安装本仓库中的软件：
