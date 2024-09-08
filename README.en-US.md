@@ -2,9 +2,9 @@
     <h1 align="center">March7th</h1>
     <p align="center">
         <a href="https://github.com/muxirr/march7th/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/muxirr/march7th/ci.yml?style=flat-square&logo=github&label=Tests" alt="GitHub Actions CI Status"></a>
-        <a href="https://github.com/muxirr/march7th/blob/master/LICENSE"><img src="https://img.shields.io/github/license/WuwuZiQWQ/March7th.svg?style=flat-square" alt="License"></a>
+        <a href="https://github.com/muxirr/march7th/blob/master/LICENSE"><img src="https://img.shields.io/github/license/muxirr/march7th.svg?style=flat-square" alt="License"></a>
         <a href="https://www.microsoft.com/en-us/windows"><img src="https://img.shields.io/badge/Target-Windows%2010-0067B8.svg?style=flat-square" alt="Powered by Saber" /></a>
-        <a href="https://github.com/WuwuZiQWQ/March7th"><img src="https://img.shields.io/github/repo-size/WuwuZiQWQ/March7th.svg?style=flat-square" alt="Repo size"></a>
+        <a href="https://github.com/WuwuZiQWQ/March7th"><img src="https://img.shields.io/github/repo-size/muxirr/march7th.svg?style=flat-square" alt="Repo size"></a>
     </p>
     <p align="center">
         <a href="README.md">简体中文</a>|<a href="README.en-US.md">English</a>
