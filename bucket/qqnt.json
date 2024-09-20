@@ -31,7 +31,7 @@
             "QQ"
         ]
     ],
-    "persist": "QQ Files",
+    "persist": "Tencent Files",
     "uninstaller": {
         "script": "Remove-Item -Path \"$env:PUBLIC\\Documents\\Tencent\" -Recurse -Force | Out-Null"
     },
