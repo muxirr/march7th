@@ -19,10 +19,12 @@
     "installer": {
         "script": [
             "$configpath = \"$env:PUBLIC\\Documents\\Tencent\\QQ\"",
-            "if (!(Test-Path \"$configpath\")) {",
+            "if (!(Test-Path -Path \"$configpath\")) {",
             "    New-Item -Path \"$configpath\" -Type Directory -Force | Out-Null",
             "}",
-            "Set-Content -NoNewline -Path \"$configpath\\UserDataInfo.ini\" -Value \"[UserDataSet]`nUserDataSavePathType=2`nUserDataSavePath=$persist_dir\\Tencent Files\""
+            "if (!(Test-Path -Path \"$configpath\\UserDataInfo.ini\")) {",
+            "    Set-Content -NoNewline -Path \"$configpath\\UserDataInfo.ini\" -Value \"[UserDataSet]`nUserDataSavePathType=2`nUserDataSavePath=$persist_dir\\Tencent Files\"",
+            "}"    
         ]
     },
     "shortcuts": [
