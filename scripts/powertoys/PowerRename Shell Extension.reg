@@ -8,8 +8,8 @@ Windows Registry Editor Version 5.00
 @="D:\\usr\\scoop\\apps\\powertoys\\current\\WinUI3Apps\\PowerToys.PowerRenameExt.dll"
 "ThreadingModel"="Apartment"
 
-[HKEY_CLASSES_ROOT\Drive\ShellEx\ContextMenuHandlers\PowerRenameExt]
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\ShellEx\ContextMenuHandlers\PowerRenameExt]
 @="{0440049F-D1DC-4E46-B27B-98393D79486B}"
 
-[HKEY_CLASSES_ROOT\AllFilesystemObjects\ShellEx\ContextMenuHandlers\PowerRenameExt]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\ShellEx\ContextMenuHandlers\PowerRenameExt]
 @="{0440049F-D1DC-4E46-B27B-98393D79486B}"
