@@ -10,8 +10,8 @@
         "if(-NOT (Test-Path \"$env:scoop\\persist\\miru-app\\miru\")) {",
         "   New-Item -ItemType Directory -Path \"$env:scoop\\apps\\miru-app\\persist\\miru\"",
         "}",
-        "if(-NOT (Test-Path \"$env:HOMEPATH\\Documents\\miru\")) {",
-        "   cmd /c mklink /D \"$env:HOMEPATH\\Documents\\miru\" \"$env:scoop\\persist\\miru-app\\miru\"",
+        "if(-NOT (Test-Path \"C:$env:HOMEPATH\\Documents\\miru\")) {",
+        "   cmd /c mklink /D \"C:$env:HOMEPATH\\Documents\\miru\" \"$env:scoop\\persist\\miru-app\\miru\"",
         "}"
     ],
     "post_uninstall": [
