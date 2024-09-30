@@ -6,11 +6,27 @@
     "url": "https://github.com/miru-project/miru-app/releases/download/v1.8.1/Miru-v1.8.1-windows.zip",
     "hash": "7D9D7F4D8DDFF27E56E0853DA11A454A16919B9F2104A15952805B6E96EF2F49",
     "bin": "miru.exe",
+    "post_install": [
+        "if(-NOT (Test-Path \"$env:scoop\\persist\\miru-app\\miru\")) {",
+        "   New-Item -ItemType Directory -Path \"$env:scoop\\apps\\miru-app\\persist\\miru\"",
+        "}",
+        "if(-NOT (Test-Path \"$env:HOMEPATH\\Documents\\miru\")) {",
+        "   cmd /c mklink /D \"$env:HOMEPATH\\Documents\\miru\" \"$env:scoop\\persist\\miru-app\\miru\"",
+        "}"
+    ],
+    "post_uninstall": [
+        "if(Test-Path \"$env:HOMEPATH\\Documents\\miru\") {",
+        "   Remove-Item \"$env:HOMEPATH\\Documents\\miru\" -Force",
+        "}"
+    ],
     "shortcuts": [
         [
             "miru.exe",
             "miru-app"
         ]
+    ],
+    "persist": [
+        "miru"
     ],
     "checkver": {
         "github": "https://github.com/miru-project/miru-app"
