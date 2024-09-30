@@ -12,9 +12,6 @@
             "miru-app"
         ]
     ],
-    "persist": [
-        "data"
-    ],
     "checkver": {
         "github": "https://github.com/miru-project/miru-app"
     },
