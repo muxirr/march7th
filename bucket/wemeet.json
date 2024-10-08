@@ -1,5 +1,5 @@
 {
-    "version": "3.29.3.498",
+    "version": "3.29.10.471",
     "description": "Tencent Meeting provides one-stop audio and video conferencing solutions.",
     "homepage": "https://meeting.tencent.com/",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://meeting.tencent.com/declare.html"
     },
     "notes": "We persist your Tencent Meeting data, they are still storaged in \"$env:scoop\\presist\\wemeet\\data\".",
-    "url": "https://updatecdn.meeting.qq.com/cos/914346a7f4ec2e31d5d3defd04905e75/TencentMeeting_0300000000_3.29.3.498.publish.officialwebsite.exe#/dl.7z",
-    "hash": "f626b9afa23d31443744e1515ba3aa4c472717c6df4f0004c49b4593349c0a64",
+    "url": "https://updatecdn.meeting.qq.com/cos/1df362309042d421982061d279b19adb/TencentMeeting_0300000000_3.29.10.471.publish.officialwebsite.exe#/dl.7z",
+    "hash": "6179e0b9ef8b628a8f0c3728f339421857bb198e6e2800704a2585099c8d75c3",
     "post_install": [
         "Rename-Item \"$dir\\`$_22_\" \"$dir\\$version\"",
         "Remove-Item \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
@@ -37,9 +37,7 @@
             "腾讯会议"
         ]
     ],
-    "persist": [
-        "data"
-    ],
+    "persist": "data",
     "checkver": {
         "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{\"package-type\":\"app\",\"channel\":\"0300000000\",\"platform\":\"windows\"}]&nonce=AAAAAAAAAAAAAAAA",
         "regex": "(?<Commitid>[0-9a-f]+)/TencentMeeting_0300000000_(?<Version>\\d+.\\d+.\\d+.\\d+).publish.officialwebsite.exe"
