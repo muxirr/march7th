@@ -26,7 +26,7 @@
         "    if ($name -Like \"dbghelp_$arch.dll\") {",
         "        info \"Creating hardlink for $name\"",
         "        New-Item -ItemType HardLink -Path \"$(appdir qqnt $global)\\current\\Files\" -Name dbghelp.dll -Target \"$dir\\$name\" | Out-Null",
-        "        }",
+        "    }",
         "}"
     ],
     "pre_uninstall": [
