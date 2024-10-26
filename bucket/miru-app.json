@@ -11,7 +11,7 @@
         "    New-Item -ItemType Directory -Path \"$env:scoop\\apps\\miru-app\\persist\\miru\"",
         "}",
         "if(-NOT (Test-Path \"$env:HOMEDRIVE$env:HOMEPATH\\Documents\\miru\")) {",
-        "    New-Item -ItemType SymbolicLink -Path \"$env:HOMEDRIVE$env:HOMEPATH\\Documents\\miru\" -Target \"$env:scoop\\persist\\miru-app\\miru\"",
+        "    New-Item -ItemType SymbolicLink -Path \"$env:HOMEDRIVE$env:HOMEPATH\\Documents\\miru\" -Target \"$env:scoop\\persist\\miru-app\\miru\" | Out-Null",
         "}"
     ],
     "post_uninstall": [
