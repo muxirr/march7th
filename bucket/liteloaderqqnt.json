@@ -17,7 +17,7 @@
         "$text = \"require(String.raw``$env:scoop\\apps\\liteLoaderqqnt\\current``)\"",
         "$text = $text -replace \"\\\\\",\"\\\\\"",
         "if((Test-Path $env:scoop\\apps\\qqnt\\current\\Files\\versions)) {",
-        "    $qq_version = Get-ChildItem -Path \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\" -Name -Exclude *.json",
+        "   $qq_version = Get-ChildItem -Path \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\" -Name -Exclude *.json",
         "   $path = \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\\$qq_version\\resources\\app\"",
         "}",
         "Out-File -FilePath \"$path\\app_launcher\\liteLoader.js\" -InputObject $text -Encoding utf8 -Force",
