@@ -5,6 +5,36 @@
     "license": "MIT",
     "url": "https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/1.2.2/LiteLoaderQQNT.zip",
     "hash": "a325c592ec53b7469c44f7eea5d27a0984e14d54ccd8d596446d0938bc91d561",
+    "post_install": [
+        "if(-NOT (Test-Path \"$env:scoop\\apps\\liteLoaderqqnt\\current\\data\")) {",
+        "   New-Item -ItemType Directory -Path \"$env:scoop\\apps\\liteLoaderqqnt\\current\\data\"",
+        "}",
+        "if(-NOT (Test-Path \"$env:scoop\\apps\\liteLoaderqqnt\\current\\plugins\")) {",
+        "   New-Item -ItemType Directory -Path \"$env:scoop\\apps\\liteLoaderqqnt\\current\\plugins\"",
+        "}",
+        "$path = \"$env:scoop\\apps\\qqnt\\current\\Files\\resources\\app\"",
+        "$text = \"require(String.raw``$env:scoop\\apps\\liteLoaderqqnt\\current``)\"",
+        "$text = $text -replace \"\\\\\",\"\\\\\"",
+        "if((Test-Path $env:scoop\\apps\\qqnt\\current\\Files\\versions)) {",
+        "    $qq_version = Get-ChildItem -Path \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\" -Name -Exclude *.json",
+        "   $path = \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\\$qq_version\resources\\app\"",
+        "}",
+        "Out-File -FilePath \"$path\\app_launcher\\liteLoader.js\" -InputObject $text -Encoding utf8 -Force",
+        "$package = Get-Content -Path $path/package.json | ConvertFrom-Json",
+        "$package.main = \"./app_launcher/liteloader.js\"",
+        "$package | ConvertTo-Json | Out-File -FilePath $path/package.json -Encoding utf8 -Force"
+    ],
+    "post_uninstall": [
+        "$path = \"$env:scoop\\apps\\qqnt\\current\\Files\\resources\\app\"",
+        "if((Test-Path $env:scoop\\apps\\qqnt\\current\\Files\\versions)) {",
+        "    $qq_version = Get-ChildItem -Path \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\" -Name -Exclude *.json",
+        "   $path = \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\\$qq_version\resources\\app\"",
+        "}",
+        "Remove-Item -Path \"$path\\app_launcher\\liteLoader.js\" -Force",
+        "$package = Get-Content -Path $path/package.json | ConvertFrom-Json",
+        "$package.main = \"./application/app_launcher/index.js\"",
+        "$package | ConvertTo-Json | Out-File -FilePath $path/package.json -Encoding utf8 -Force"
+    ],
     "persist": [
         "data",
         "plugins"
