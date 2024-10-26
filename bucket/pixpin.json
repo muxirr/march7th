@@ -22,15 +22,28 @@
         ]
     ],
     "persist": [
-            "History",
-            "Data",
-            "Coredump",
-            "Config"
+        "History",
+        "Data",
+        "Coredump",
+        "Config"
     ],
     "shortcuts": [
         [
             "PixPin.exe",
             "PixPin"
         ]
-    ]
+    ],
+    "checkver": {
+        "script": [
+            "$url = 'https://pixpinapp.com/'",
+            "$resp = Invoke-WebRequest -Uri $url",
+            "$cont = $resp.Content",
+            "$pattern = 'PixPin_[\\d.]+.exe'",
+            "[regex]::Match($cont, $pattern).Value"
+        ],
+        "regex": "PixPin_([\\d\\.]+)\\.exe"
+    },
+    "autoupdate": {
+        "url": "https://download.pixpinapp.com/PixPin_$match1.zip"
+    }
 }
