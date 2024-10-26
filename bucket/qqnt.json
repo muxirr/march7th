@@ -8,12 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.15_240919_x64_01.exe#/dl.7z",
-            "hash": "cc470addb6bcf2ff1eb8949462046bf54b33ac970fc6adfcf19e88020489be63"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.16_241023_x64_01.exe#/dl.7z",
+            "hash": "10cd203d0aacc295f5afbddf463accdddccbce89165306be21449a3b9ca9423f"
         },
         "32bit": {
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.15_240919_x86_01.exe#/dl.7z",
-            "hash": "e903aa3af88a3341f2344db554cd76714fd81246cbb59d873ef41853096abbbf"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.16_241023_x86_01.exe#/dl.7z",
+            "hash": "1fedb8b88bb1f52d78a930d5188ea42a40b752e2cdf305be3bc01222cf43a7fa"
+        },
+        "arm64": {
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.16_241023_arm64_01.exe#/dl.7z",
+            "hash": "a217bbe2103ac109b1a2df7b0a33fa6e79909fcd1c9cbafe36e18bb0bf7ee8a0"
         }
     },
     "installer": {
@@ -38,16 +42,27 @@
         "script": "Remove-Item -Path \"$env:PUBLIC\\Documents\\Tencent\" -Recurse -Force | Out-Null"
     },
     "checkver": {
-        "url": "https://qq-web.cdn-go.cn/im.qq.com_new/bb2b69d5/202409201611/windowsDownloadUrl.js",
-        "regex": "QQNT/Windows/QQ_(?<Version>([\\d.]+_[\\d.]+))"
+        "script": [
+            "$url = 'https://im.qq.com/pcqq/index.shtml'",
+            "$resp = Invoke-WebRequest -Uri $url",
+            "$cont = $resp.Content",
+            "$pattern = 'https://qq-web.cdn-go.cn.*windowsDownloadUrl.js'",
+            "$jsUrl = [regex]::Match($cont, $pattern).Value",
+            "Invoke-WebRequest -Uri $jsUrl"
+        ],
+        "regex": "QQNT/Windows/QQ_([\\d\\.]+)_([\\d]+)_x86_01.exe",
+        "replace": "${1}.${2}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_$matchVersion_x64_01.exe#/dl.7z"
+                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_$match1_$match2_x64_01.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_$matchVersion_x86_01.exe#/dl.7z"
+                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_$match1_$match2_x86_01.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_$match1_$match2_arm64_01.exe#/dl.7z"
             }
         }
     }
