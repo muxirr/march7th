@@ -5,7 +5,10 @@
     "license": "MIT",
     "url": "https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/1.2.2/LiteLoaderQQNT.zip",
     "hash": "a325c592ec53b7469c44f7eea5d27a0984e14d54ccd8d596446d0938bc91d561",
-    "notes": "This is a plugin loader for QQNT, you need to install march7th/qqnt first.To remove file verification，you need to install march7th/qqntfileverifypatch.We recommend that you install the LL-plugin-list-viewer first from https://github.com/ltxhhz/LL-plugin-list-viewer",
+    "suggest": {
+        "qqntfileverifypatch": "march7th/qqntfileverifypatch"
+    },
+    "notes": "We recommend that you first install a plugin such as LL-plugin-list-viewer from https://github.com/ltxhhz/LL-plugin-list-viewer.",
     "pre_install": [
         "if(Test-Path \"$env:scoop\\apps\\qqnt\") {",
         "   if(-NOT (Test-Path \"$env:scoop\\apps\\liteLoaderqqnt\\current\\data\")) {",
