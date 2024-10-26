@@ -3,6 +3,12 @@
     "description": "QQNTFileVerifyPatch - DLLHijackMethod",
     "homepage": "https://github.com/LiteLoaderQQNT/QQNTFileVerifyPatch",
     "license": "MIT",
+    "depends": [
+        "march7th/qqnt"
+    ],
+    "suggest": {
+        "liteLoaderqqnt": "march7th/liteLoaderqqnt"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/LiteLoaderQQNT/QQNTFileVerifyPatch/releases/download/DllHijack_1.1.2/dbghelp_x64.dll",
