@@ -5,6 +5,7 @@
     "license": "MIT",
     "url": "https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/1.2.2/LiteLoaderQQNT.zip",
     "hash": "a325c592ec53b7469c44f7eea5d27a0984e14d54ccd8d596446d0938bc91d561",
+    "notes": "This is a plugin loader for QQNT, you need to install march7th/qqnt first.To remove file verification，you need to install march7th/qqntfileverifypatch.",
     "post_install": [
         "if(-NOT (Test-Path \"$env:scoop\\apps\\liteLoaderqqnt\\current\\data\")) {",
         "   New-Item -ItemType Directory -Path \"$env:scoop\\apps\\liteLoaderqqnt\\current\\data\"",
