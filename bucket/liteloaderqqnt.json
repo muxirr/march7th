@@ -25,7 +25,6 @@
         "      $path = \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\\$qq_version\\resources\\app\"",
         "   }",
         "   Out-File -FilePath \"$path\\app_launcher\\liteLoader.js\" -InputObject $text -Encoding utf8 -Force",
-        "   cp \"$path\\package.json\" \"$path\\package.bak\"",
         "   $package = Get-Content -Path $path/package.json | ConvertFrom-Json",
         "   $package.main = \"./app_launcher/liteloader.js\"",
         "   $package = $package | ConvertTo-Json",
