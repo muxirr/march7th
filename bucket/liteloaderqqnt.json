@@ -22,9 +22,10 @@
         "      $path = \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\\$qq_version\\resources\\app\"",
         "   }",
         "   Out-File -FilePath \"$path\\app_launcher\\liteLoader.js\" -InputObject $text -Encoding utf8 -Force",
-        "   $package = Get-Content -Path $path/package.json",
-        "   $package = $package -replace \"./application/app_launcher/index.js\",\"./app_launcher/liteloader.js\"",
-        "   $package.TrimEnd(\"`r\",\"`n\") | Out-File -FilePath $path/package.bak -Encoding utf8 -Force",
+        "   $package = Get-Content -Path $path/package.json | CoverntFrom-Json",
+        "   $package.main = \"./app_launcher/liteloader.js\"",
+        "   $package = $package | ConvertTo-Json",
+        "   $package.TrimEnd(\"`r\",\"`n\") | Out-File -FilePath $path/package.json -Encoding utf8 -Force",
         "}",
         "else {",
         "   Write-Host \"Please install march7th/qqnt first.\"",
@@ -38,9 +39,10 @@
         "   $path = \"$env:scoop\\apps\\qqnt\\current\\Files\\versions\\$qq_version\\resources\\app\"",
         "}",
         "Remove-Item -Path \"$path\\app_launcher\\liteLoader.js\" -Force",
-        "   $package = Get-Content -Path $path/package.json",
-        "   $package = $package -replace \"./application/app_launcher/index.js\",\"./app_launcher/liteloader.js\"",
-        "   $package.TrimEnd(\"`r\",\"`n\") | Out-File -FilePath $path/package.bak -Encoding utf8 -Force"
+        "$package = Get-Content -Path $path/package.json | CoverntFrom-Json",
+        "$package.main = \"./application/app_launcher/index.js\"",
+        "$package = $package | ConvertTo-Json",
+        "$package.TrimEnd(\"`r\",\"`n\") | Out-File -FilePath $path/package.json -Encoding utf8 -Force"
     ],
     "persist": [
         "data",
