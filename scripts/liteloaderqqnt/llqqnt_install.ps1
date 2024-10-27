@@ -3,7 +3,7 @@ $llqqnt_dir = "path/to/llqqnt"
 $path = "$qqnt_dir\resources\app"
 
 $text = "require(String.raw``$llqqnt_dir``)"
-$text = $text -replace "\\","\\"
+$text = $text.replace("\\","/")
 
 if((Test-Path $qqnt_dir\versions)) {
     $qq_version = Get-ChildItem -Path "$qqnt_dir\versions" -Name -Directory
