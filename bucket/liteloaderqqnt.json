@@ -15,7 +15,7 @@
     ],
     "pre_install": [
         "$content = Get-Content -Path \"$bucketsdir\\march7th\\scripts\\liteloaderqqnt\\llqqnt_install.ps1\"",
-        "$content.replace(\"path/to/qqnt\", \"$(appdir qqnt $global)\\current\").replace(\"path/to/llqqnt\",\"$dir\") | Set-Content -Path \"$dir\\llqqnt_install.ps1\"",
+        "$content.replace(\"path/to/qqnt/\", \"$(appdir qqnt $global)\\current\\\").replace(\"path/to/llqqnt\",\"$dir\") | Set-Content -Path \"$dir\\llqqnt_install.ps1\"",
         "powershell -NoLogo -NoProfile -File \"$dir\\llqqnt_install.ps1\""
     ],
     "bin": [
@@ -32,10 +32,10 @@
         "    $path = \"$qqnt_dir\\versions\\$qq_version\\resources\\app\"",
         "}",
         "if((Test-Path \"$path\\app_launcher\\liteLoader.js\")) {",
-        "    Remove-Item -Path \"$path\\app_launcher\\liteLoader.js\" -Force",
+        "    Remove-Item -Path \"$path\\app_launcher\\liteloader.js\" -Force",
         "}",
         "$package = Get-Content -Path $path/package.json | ConvertFrom-Json",
-        "$package.main = \"./application/app_launcher/index.js\"",
+        "$package.main = \"./application.asar/app_launcher/index.js\"",
         "$package = $package | ConvertTo-Json",
         "$package = $package -replace \"`r`n\",\"`n\"",
         "$package.TrimEnd(\"`r\",\"`n\") | Set-Content -Path $path/package.json -NoNewline"

@@ -35,11 +35,12 @@
     ],
     "checkver": {
         "script": [
-            "$url = 'https://pixpinapp.com/'",
+            "$url = 'https://pixpin.cn'",
             "$resp = Invoke-WebRequest -Uri $url",
             "$cont = $resp.Content",
-            "$pattern = 'PixPin_[\\d.]+.exe'",
-            "[regex]::Match($cont, $pattern).Value"
+            "$pattern = 'page-[\\w\\d]+.js'",
+            "$url = 'https://pixpin.cn/_next/static/chunks/app/' + [regex]::Match($cont, $pattern).Value",
+            "$(Invoke-WebRequest -Uri $url).Content"
         ],
         "regex": "PixPin_([\\d\\.]+)\\.exe"
     },
