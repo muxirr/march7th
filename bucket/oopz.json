@@ -25,12 +25,8 @@
     "checkver": {
         "script": [
             "$url = 'https://www.oopz.cn/download/xx?v=' + $([DateTimeOffset]::Now.ToUnixTimeMilliseconds() / 1e3 -bor 0)",
-            "if ( $PSVersionTable.PSVersion.Major -ge 6 ) {",
-            "    $resp = $(Invoke-WebRequest -Uri $url -MaximumRedirection 0 -SkipHttpErrorCheck) 2>$null",
-            "} else {",
-            "    $resp = $(Invoke-WebRequest -Uri $url -MaximumRedirection 0 -ErrorAction SilentlyContinue)",
-            "}",
-            "$resp.Headers.Location"
+            "$resp = Invoke-WebRequest -Uri $url -Method Head",
+            "$resp.Baseresponse.RequestMessage.RequestUri.AbsoluteUri"
         ],
         "regex": "/([\\d]+)/oopz_setup_v([\\d\\.]+)\\.exe",
         "replace": "$2"
