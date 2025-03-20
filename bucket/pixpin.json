@@ -34,17 +34,11 @@
         ]
     ],
     "checkver": {
-        "script": [
-            "$url = 'https://pixpin.cn'",
-            "$resp = Invoke-WebRequest -Uri $url",
-            "$cont = $resp.Content",
-            "$pattern = 'page-[\\w\\d]+.js'",
-            "$url = 'https://pixpin.cn/_next/static/chunks/app/' + [regex]::Match($cont, $pattern).Value",
-            "$(Invoke-WebRequest -Uri $url).Content"
-        ],
-        "regex": "PixPin_([\\d\\.]+)\\.exe"
+        "url": "https://accounts.viewdepth.cn/deepviewapi/public/pixpin/info",
+        "jsonpath": "$.data.info",
+        "regex": "\"version\":\"(?<version>[\\d\\.]+)\""
     },
     "autoupdate": {
-        "url": "https://download.pixpinapp.com/PixPin_$match1.zip"
+        "url": "https://download.pixpinapp.com/PixPin_$version.zip"
     }
 }
