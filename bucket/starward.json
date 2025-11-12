@@ -24,7 +24,8 @@
         "bg"
     ],
     "checkver": {
-        "github": "https://github.com/Scighost/Starward"
+        "url": "https://api.github.com/repos/Scighost/Starward/releases",
+        "regex": "Portable_([\\d.]+(-[\\w\\d.]+)?)_x64.7z"
     },
     "autoupdate": {
         "url": "https://github.com/Scighost/Starward/releases/download/$version/Starward_Portable_$version_x64.7z"
