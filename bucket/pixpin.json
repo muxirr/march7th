@@ -33,7 +33,7 @@
     ],
     "checkver": {
         "url": "https://pixpin.cn/download",
-        "regex": "download.pixpin.cn/(?<prefix>.*?)_(?<version>[\\d.]+)[.exe|.zip]"
+        "regex": "download.pixpin.cn/(?<prefix>.*?)_(?<version>[\\d.]+)(.exe|.zip)"
     },
     "autoupdate": {
         "url": "https://download.pixpin.cn/$matchPrefix_$versionzip"

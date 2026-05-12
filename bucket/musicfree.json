@@ -24,7 +24,7 @@
     "checkver": {
         "url": "https://api.github.com/repos/maotoumao/MusicFreeDesktop/releases",
         "jsonpath": "$[0].assets[*].browser_download_url",
-        "regex": "(?<file>MusicFree-([\\d.]+)-win(?:dows|32-x64)-setup.exe)"
+        "regex": "(?<file>MusicFree-([\\d\\w.]+)-win(?:dows|32-x64)-setup.exe)"
     },
     "autoupdate": {
         "architecture": {
