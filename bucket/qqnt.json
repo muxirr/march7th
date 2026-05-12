@@ -51,8 +51,8 @@
             "$url = $url -Replace [regex]::Escape($hostname), $ip",
             "Invoke-WebRequest -Uri $url -UseBasicParsing -Headers @{'Host' = $hostname} | Select-Object -ExpandProperty Content"
         ],
-        "regex": "([\\d\\w]+).qq.com/qqfile/qq/QQNT/Windows/QQ_([\\d\\.]+)_([\\d]+)_x86_01.exe",
-        "replace": "${2}.${3}"
+        "regex": "QQ_([\\d\\.]+)[-_]([\\d]+)_x86_01.exe",
+        "replace": "${1}.${2}"
     },
     "autoupdate": {
         "architecture": {
