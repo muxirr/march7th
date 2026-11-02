@@ -1,5 +1,5 @@
 {
-    "version": "2.5.10",
+    "version": "2.5.13",
     "description": "v2rayA. A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols.",
     "homepage": "https://github.com/v2rayA/v2raya",
     "license": {
@@ -14,12 +14,12 @@
     "notes": "Start v2rayA with Windows by running: 'reg import \"$(scoop prefix v2raya)\\add-startup.reg\"'.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.5.10/v2raya_windows_x64_2.5.10.exe#/v2rayaWin.exe",
-            "hash": "226e3a000c896ee5994bd76fed0bf4ea8c5f457aee266b3c8c7969116b6a7ac0"
+            "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.5.13/v2raya_windows_x64_2.5.13.exe#/v2rayaWin.exe",
+            "hash": "88a91c39c519d33dfade0fd9ea5354e0ff10372debf65ef35454dcda0073d746"
         },
         "arm64": {
-            "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.5.10/v2raya_windows_arm64_2.5.10.exe#/v2rayaWin.exe",
-            "hash": "adfb05b0b978dc2d0f9d3e96b5e680841daef5cc5f903734b0024987871a16e4"
+            "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.5.13/v2raya_windows_arm64_2.5.13.exe#/v2rayaWin.exe",
+            "hash": "a4c9d4c7db5857af49d72593a9431be22bb6c4f74e3fde7a6203a1eefe1974b5"
         }
     },
     "pre_install": [
